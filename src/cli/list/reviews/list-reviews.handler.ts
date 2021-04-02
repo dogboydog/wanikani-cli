@@ -62,6 +62,7 @@ export default class ListReviewsHandler implements ICommandHandler {
         params.response.data.setObj(flattenedData);
 
         params.response.format.output({
+            header: true,
             output: flattenedData,
             format: 'table',
             fields: ['subject_id', 'subject_type', 'percentage_correct']
