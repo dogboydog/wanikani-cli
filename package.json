@@ -1,0 +1,34 @@
+{
+  "name": "wanikani-cli",
+  "version": "0.0.1-prototype",
+  "description": "WaniKani CLI",
+  "author": "dogboydog and OpenAPI-Generator Contributors",
+  "keywords": [
+    "axios",
+    "typescript",
+    "openapi-client",
+    "openapi-generator",
+    ""
+  ],
+  "license": "MIT",
+  "bin": {
+    "wanikani": "./dist/src/cli/main.js"
+  },
+  "main": "./dist/src/apis/index",
+  "typings": "./dist/src/apis/index.d.ts",
+  "scripts": {
+    "clean": "rimraf dist/",
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@zowe/imperative": "4.13.0",
+    "axios": "0.21.1"
+  },
+  "devDependencies": {
+    "@types/node": "^12.11.5",
+    "rimraf": "3.0.2",
+    "typescript": "^3.6.4"
+  }
+}
