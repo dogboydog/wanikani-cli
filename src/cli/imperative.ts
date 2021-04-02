@@ -28,7 +28,8 @@ const config: IImperativeConfig = {
                 properties: {
                     token: {
                         type: "string",
-                        optionDefinition: CommonOptions.TOKEN_OPTION
+                        optionDefinition: CommonOptions.TOKEN_OPTION,
+                        secure: true
                     }
                 },
                 required: ["token"]
